@@ -2,20 +2,23 @@
 <html>
 <head>
 <style> 
-div {
-  width: 300px;
-  height: 100px;
-  padding: 15px;
-  background-color: coral;
-  box-shadow: 10px 10px 5px lightblue;
+@font-face {
+   font-family: myFirstFont;
+   src: url(sansation_light.woff);
+}
+
+* {
+   font-family: myFirstFont;
 }
 </style>
 </head>
 <body>
 
-<h1>The box-shadow Property</h1>
+<h1>The @font-face Rule</h1>
 
-<div>A div element with a 5px blurred, lightblue box-shadow.</div>
+<div>
+With CSS, websites can use fonts other than the pre-selected "web-safe" fonts.
+</div>
 
 </body>
 </html>
