@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
-@font-face {
-   font-family: myFirstFont;
-   src: url(sansation_light.woff);
+<style>
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
 }
 
-* {
-   font-family: myFirstFont;
+#myDiv {
+  transform: rotateX(150deg);
 }
 </style>
 </head>
 <body>
 
-<h1>The @font-face Rule</h1>
+<h1>The rotateX() Method</h1>
+
+<p>The rotateX() method rotates an element around its X-axis at a given degree.</p>
 
 <div>
-With CSS, websites can use fonts other than the pre-selected "web-safe" fonts.
+This a normal div element.
+</div>
+
+<div id="myDiv">
+This div element is rotated 150 degrees.
 </div>
 
 </body>
