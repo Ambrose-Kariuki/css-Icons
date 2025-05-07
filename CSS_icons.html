@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
-div {
-  width: 100px;
-  height: 100px;
-  background-color: purple;
-  animation-name: example;
-  animation-duration: 4s;
+<style>
+#img1 {
+  filter: blur(5px);
 }
 
-@keyframes example {
-  from {background-color: purple;}
-  to {background-color: green;}
+#img2 {
+  filter: blur(0.5px);
 }
 </style>
 </head>
 <body>
 
-<h1>CSS Animation</h1>
+<h1>The blur() Function</h1>
 
-<div></div>
+<p>blur(2px):</p>
+<img id="img1" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
 
-<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+<p>blur(6px):</p>
+<img id="img2" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+
+<p>Original image:</p>
+<img src="pineapple.jpg" alt="Pineapple" width="300" height="300">
 
 </body>
 </html>
