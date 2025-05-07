@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
+<style> 
 div {
-  width: 300px;
+  width: 100px;
   height: 100px;
-  background-color: yellow;
-  border: 1px solid black;
+  background-color: purple;
+  animation-name: example;
+  animation-duration: 4s;
 }
 
-#myDiv {
-  transform: rotateX(150deg);
+@keyframes example {
+  from {background-color: purple;}
+  to {background-color: green;}
 }
 </style>
 </head>
 <body>
 
-<h1>The rotateX() Method</h1>
+<h1>CSS Animation</h1>
 
-<p>The rotateX() method rotates an element around its X-axis at a given degree.</p>
+<div></div>
 
-<div>
-This a normal div element.
-</div>
-
-<div id="myDiv">
-This div element is rotated 150 degrees.
-</div>
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
 
 </body>
 </html>
